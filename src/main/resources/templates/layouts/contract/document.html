@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout (title, content)">
+<head th:replace="layouts/contract/header :: head">
+    <meta charset="UTF-8">
+    <title th:replace="${title}">VAN</title>
+</head>
+<body>
+
+
+    <div class="wrap">
+        <div th:replace="layouts/contract/navigation ::navigation"></div>
+
+        <div th:replace="layouts/contract/modal :: #modal_change_password"></div>
+        <div th:replace="layouts/contract/modal :: #modal_return_detail"></div>
+        <div th:replace="layouts/contract/modal :: #modal_request_return"></div>
+        <div th:replace="layouts/contract/modal :: #modal_notice_detail"></div>
+        <div th:replace="layouts/contract/modalSearchContract :: #modal_search_contract"></div>
+
+        <div th:replace="${content}">
+            <p>레이아웃 컨텐츠</p>
+        </div>
+
+        <footer th:replace="layouts/contract/footer :: footer" class="w-full"></footer>
+    </div>
+
+
+</body>
+</html>

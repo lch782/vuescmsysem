@@ -1,0 +1,57 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<nav th:fragment="navigation" class="bg-amber-50 pb-1">
+    <div class="flex px-3 pt-2">
+        <p class="flex items-center bg-teal-600 text-white">업체 정보</p>
+        <p class="flex items-center px-2">코드 :</p>
+        <p class="flex items-center text-pink-600">10326</p>
+        <p class="flex items-center px-2">업체명 :</p>
+        <p class="text-lg text-blue-500">(주)나래엔지니어링</p>
+    </div>
+
+    <div class="flex pt-3">
+        <div class="w-32">
+            <a href="/contract/contractHome" class="flex items-center">
+                <span class="w-full flex justify-center rounded-md border-x bg-amber-700 py-3 text-white shadow-md hover:bg-red-800">
+                HOME
+                </span>
+            </a>
+        </div>
+        <div class="w-32">
+            <a href="/contract/registContract">
+                <span class="flex justify-center rounded-md border-x bg-amber-700 py-3 text-white shadow-md hover:bg-red-800">
+                    주문등록
+                </span>
+            </a>
+        </div>
+        <div class="w-32">
+            <a href="/contract/searchContractList">
+                <span class="flex justify-center rounded-md border-x bg-amber-700 py-3 text-white shadow-md hover:bg-red-800">
+                    주문내역조회
+                </span>
+            </a>
+        </div>
+        <div class="w-32">
+            <a href="/contract/searchDepositList">
+              <span class="flex justify-center rounded-md border-x bg-amber-700 py-3 text-white shadow-md hover:bg-red-800">
+                  입금내역조회
+              </span>
+            </a>
+        </div>
+
+        <div class="w-36 ml-auto">
+            <a href="#" id="btn_change_password">
+                <span class="flex justify-center rounded-md border-x bg-red-800 py-3 text-white shadow-md hover:bg-red-400">
+                비밀번호 변경
+                </span>
+            </a>
+        </div>
+
+        <div class="w-36">
+            <a href="/">
+                <span class="flex justify-center rounded-md border-x bg-red-800 py-3 text-white shadow-md hover:bg-red-400">
+                로그아웃
+                </span>
+            </a>
+        </div>
+    </div>
+</nav>

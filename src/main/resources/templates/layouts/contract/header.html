@@ -1,0 +1,38 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<!--  테일윈드  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+<!--    <link rel="stylesheet" href="/css/main.css">-->
+
+    <!--제이쿼리-->
+<!--    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" type="text/css" href="/js/jquery-ui-1.13.2.custom/jquery-ui.min.css">
+    <script type="text/javascript" src="/js/jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    <script type="module" th:src="@{/js/Contract.js}"></script>
+    <script type="module" th:src="@{/js/Deposit.js}"></script>
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+
+<!--    <link rel="stylesheet" href="https://uicdn.toast.com/chart/latest/toastui-chart.min.css" />-->
+<!--    <script src="https://uicdn.toast.com/chart/latest/toastui-chart.min.js"></script>-->
+
+<!--  토스트 ui 차트  -->
+    <link rel="stylesheet" href="/js/t_chart/dist/toastui-chart.min.css">
+    <script type="module" src="/js/t_chart/dist/toastui-chart.min.js"></script>
+    <script type="module" src="/js/importUi.js"></script>
+<!--  토스트  ui 그리드  -->
+    <link rel="stylesheet" href="/js/tui-grid/dist/tui-grid.min.css">
+    <script type="module" src="/js/tui-grid/dist/tui-grid.min.js"></script>
+    <script type="module" src="/js/importTgrid.js"></script>
+    <script type="module" th:src="@{/js/RegistContractGrid.js}"></script>
+    <script type="module" th:src="@{/js/SearchContractGrid.js}"></script>
+    <script type="module" th:src="@{/js/SearchDepositGrid.js}"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/searchDeposit.css">
+
+
+
+    <meta charset="UTF-8">
+    <title th:replace="${title}">SCM System</title>
+</head>

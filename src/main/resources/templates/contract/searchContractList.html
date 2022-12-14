@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layouts/contract/document :: layout(~{::title}, ~{::content})}">
+<head>
+    <title>주문내역 페이지</title>
+</head>
+
+<content class="flex justify-center">
+    <div class="h-96 bg-gray-50 main-content">
+        <div>
+            <p class="text-lg p-2">주문내역 조회</p>
+        </div>
+        <div class="container" >
+            <div class="p-2" style="margin:0 auto;">
+                <span class="font-bold">주문일자&nbsp;:</span>
+                <input class="datepicker" id="datepicker1"/>
+                <input class="datepicker" id="datepicker2"/>
+
+                <span class="font-bold">상품명&nbsp;:</span>
+                <input type="text" class="boer"/>
+                <span class="font-bold">주문번호&nbsp;:</span>
+                <input type="text" class="boer"/>
+
+
+                <button class="h-8 w-20 rounded-md bg-green-400 text-white">검색</button>
+                <button class="h-8 w-24 rounded-md bg-orange-300">주문서 발행</button>
+
+            </div>
+            <div style="margin:0 auto;">
+                <div id="contractgrid"></div>
+            </div>
+        </div>
+    </div>
+
+</content>
+

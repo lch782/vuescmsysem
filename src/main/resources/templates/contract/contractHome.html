@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+th:replace="~{layouts/contract/document :: layout(~{::title}, ~{::content})}">
+<head>
+    <title>메인 페이지</title>
+</head>
+
+<content class="flex justify-center">
+    <div class=" main-content bg-gray-50">
+
+        <div class="flex">
+            <div class="order_chart border">
+                <div id="chart_area" class=""></div>
+
+            </div>
+
+            <div class="w-64 pl-3">
+                <h3 class="bg-gradient-to-r from-lime-600 to-lime-400  text-lg text-white">연간 주문 금액</h3>
+                <table class="w-full">
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2021-10</td>
+                        <td class="py-1 float-right">470000</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2021-11</td>
+                        <td class="py-1 float-right">395000</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2021-12</td>
+                        <td class="py-1 float-right">488000</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2022-01</td>
+                        <td class="py-1 float-right">519000</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2022-02</td>
+                        <td class="py-1 float-right">378000</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2022-03</td>
+                        <td class="py-1 float-right">644000</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2022-04</td>
+                        <td class="py-1 float-right">727374</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2022-05</td>
+                        <td class="py-1 float-right">556123</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2022-06</td>
+                        <td class="py-1 float-right">625500</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2022-07</td>
+                        <td class="py-1 float-right">677600</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2022-08</td>
+                        <td class="py-1 float-right">322345</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-1 w-28 pl-8">2022-09</td>
+                        <td class="py-1 float-right">322345</td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+        </div>
+        <div class="flex py-2 pl-96">
+            <button class="bg-lime-600 mx-3 px-4 py-1 rounded-md text-white hover:bg-lime-800" id="select_month">월별</button>
+            <button class="bg-lime-600 mx-3 px-4 py-1 rounded-md text-white hover:bg-lime-800" id="select_week">주별</button>
+            <button class="bg-lime-600 mx-3 px-4 py-1 rounded-md text-white hover:bg-lime-800" id="select_day">일별</button>
+        </div>
+
+        <div class="flex">
+            <div class="w-96">
+                <h1 class="text-lg bg-gradient-to-r from-amber-700 to-yellow-500 text-white">최근 주문 내역</h1>
+                <div class="flex">
+                    <p class="py-1">제주도 커피 20kg 22/09/24</p><p class="py-1 px-2 text-green-600">발송<p>
+                </div>
+                <div class="flex">
+                    <p class="py-1">강원도 삼척 커피 45kg 22/09/18</p> <p class="py-1 px-2 text-green-600">발송</p>
+                </div>
+                <div class="flex">
+                    <p class="py-1">자연근 홍삼 2.5kg 4박스 22/09/11</p> <p class="py-1 px-2 text-green-600">발송</p>
+                </div>
+                <div class="flex">
+                    <p class="py-1">아이스 아메리카노 원액 48l 22/09/07</p> <p class="py-1 px-2 text-green-600">발송</p>
+                </div>
+                <div class="flex">
+                    <p class="py-1">휘핑크림 파우더 20포 22/09/02</p> <p class="py-1 px-2 text-red-600">반품</p>
+                </div>
+            </div>
+
+            <div class="mx-3 w-80">
+                <h1 class="text-lg bg-gradient-to-r from-amber-700 to-yellow-500 text-white">최근 입금 내역</h1>
+                <ul>
+                    <li class="flex py-1">
+                        <p class="mr-16 px-2">2022-09-28</p>
+                        <p>25,000</p>
+                    </li>
+                    <li class="flex py-1">
+                        <p class="mr-16 px-2">2022-09-28</p>
+                        <p>48,300</p>
+                    </li>
+                    <li class="flex py-1">
+                        <p class="mr-16 px-2">2022-09-28</p>
+                        <p>51,100</p>
+                    </li>
+                    <li class="flex py-1">
+                        <p class="mr-16 px-2">2022-09-28</p>
+                        <p>192,000</p>
+                    </li>
+                    <li class="flex py-1">
+                        <p class="mr-16 px-2">2022-09-28</p>
+                        <p>75,000</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mx-3 w-80">
+                <div class="">
+                    <h2 class="text-lg bg-gradient-to-r from-amber-700 to-yellow-500 text-white">공지사항</h2>
+                </div>
+                <ul>
+                    <li class="notice_detail py-1">배송 지연관련 안내 문구 수정 안내</li>
+                    <li class="notice_detail py-1">추석 연휴 배송 지연 안내</li>
+                    <li class="notice_detail py-1"> 하계 휴가 관련 안내 </li>
+                </ul>
+            </div>
+
+    </div>
+
+
+
+
+
+    </div>
+</content>
+

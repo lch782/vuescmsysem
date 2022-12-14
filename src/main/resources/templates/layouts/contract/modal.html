@@ -1,0 +1,137 @@
+
+<div>
+
+    <!-- 패스워드 변경 모달 -->
+  <div id="modal_change_password">
+    <div class="modal__background">
+      <div class="modal__box">
+        <div class="h-24"></div>
+        <div class="flex justify-center">
+          <p>새로운 비밀번호를 입력해 주십시오</p>
+        </div>
+        <div class="flex justify-center">
+          <p class="w-32">새로운 비밀번호</p>
+          <input class="border" id="new_password" type="password" />
+        </div>
+        <div class="flex justify-center">
+          <p class="w-32">비밀번호 확인</p>
+          <input class="border" id="new_password_confirm" type="password" />
+        </div>
+        <div>
+          <div class="flex justify-center">
+            <button id="new_password_cancel" class="w-16 bg-red-600 text-white">취소</button>
+            <button id="new_password_approval" class="w-16 bg-green-600 text-white">확인</button>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+<!-- 반품 사유 모달 -->
+  <div id="modal_return_detail">
+    <div class="modal__background">
+
+      <div class="modal__box">
+        <table class="border bg-slate-100 mx-3 my-3">
+          <tr>
+            <td class="flex w-32 justify-center bg-orange-100">반품 사유</td>
+            <td class="w-56">포장 상태 불량</td>
+          </tr>
+          <tr>
+            <td class="flex w-32 justify-center bg-orange-100">반품 일시</td>
+            <td class="w-56">2022/09/04</td>
+          </tr>
+          <tr>
+            <td class="flex w-32 justify-center bg-orange-100">상품명</td>
+            <td class="w-56">킬리만자로 표범 커피 500g</td>
+          </tr>
+          <tr>
+            <td class="flex w-32 justify-center bg-orange-100">상품코드</td>
+            <td class="w-56">BGAA45000124</td>
+          </tr>
+          <tr>
+            <td class="flex w-32 justify-center bg-orange-100">수량</td>
+            <td class="w-56">4box</td>
+          </tr>
+        </table>
+        <div class="flex justify-center py-3">
+          <button class="h-8 w-16 rounded-md bg-blue-400 text-white" id="return_detail_confirm">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--반품 신청 모달  -->
+  <div id="modal_request_return">
+    <div class="modal__background">
+      <div class="modal__box">
+        <div class="flex justify-center">
+          <table>
+            <tr>
+              <th>반품 신청</th>
+            </tr>
+            <tr>
+              <td class="w-28">상품명</td>
+              <td>케나다산 원두커피</td>
+            </tr>
+            <tr>
+              <td>주문 수량</td>
+              <td>1box</td>
+            </tr>
+            <tr>
+              <td>반품 수량</td>
+              <td><input type="number" class="border"/></td>
+            </tr>
+            <tr>
+              <td>반품 금액</td>
+              <td><input type="number" class="border"/></td>
+            </tr>
+            <tr>
+              <td>반품 사유</td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="text" class="border w-72"/> </td>
+            </tr>
+          </table>
+        </div>
+        <div class="flex justify-center py-3">
+          <button class="h-8 w-16 rounded-md bg-red-400 text-white" id="request_return_cancel">취소</button>
+          <button class="h-8 w-16 rounded-md bg-blue-400 text-white" id="request_return_confirm">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- 공지사항 모달 -->
+  <div id="modal_notice_detail">
+    <div class="modal__background">
+      <div class="modal__box">
+        <div class="">
+          <div class="flex items-center justify-center">
+            <table class="w-96">
+              <tr>
+                <th colspan="2">공지사항</th>
+              </tr>
+              <tr>
+                <td>제목</td>
+                <td class="font-semibold">추석연휴 배송 안내</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <textarea class="w-full h-44">명절 연휴로 인한 배송 일정을 아래와 같이 안내드립니다. 9월 24일 주문 완료 건까지 정상 발송 처리되며 (택배사 사정으로 인해 일부 지역에서 배송 지연이 있을 수 있습니다.) 이후 주문 건은 10월 5일부터 순차적으로 배송 처리됩니다. 감사합니다.
+                  </textarea>
+              </tr>
+            </table>
+          </div>
+          <div class="flex justify-center items-end h-12">
+            <button class="h-8 w-16 rounded-md bg-blue-400 text-white" id="notice_detail_confirm">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
